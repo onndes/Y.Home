@@ -1,0 +1,20 @@
+.after-top-block {
+      &__wrapp {
+            padding: 40px 40px;
+            display: flex;
+            justify-content: space-between;
+      }
+      &__first-block {
+            flex: 0 1 500px;
+            margin: 0px 80px 0px 0px;
+      }
+      &__title {
+      }
+      &__text {
+      }
+      &__first-second {
+            flex: 0 1 500px;
+      }
+}
+.container {
+}

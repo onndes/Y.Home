@@ -1,0 +1,60 @@
+.top-block {
+      &__s {
+      }
+      &__wrapp {
+            padding: 0 27px;
+      }
+      &__content-box {
+      }
+      &__title {
+            font-size: rem(35px);
+            line-height: rem(55px);
+            @include minq(500px) {
+                  font-size: rem(45px);
+                  line-height: rem(65px);
+            }
+      }
+      &__text {
+      }
+      &__btn-box {
+            max-width: 100%;
+            display: flex;
+            padding: 0px 0px 60px 0px;
+      }
+      &__link-btn {
+            &_one {
+                  margin: 0px 20px 0px 0px;
+            }
+            &_two {
+            }
+      }
+      &__form-box {
+      }
+      &__form-wrapp {
+      }
+      &__h3 {
+      }
+      &__form {
+      }
+      &__input-box {
+            &_row {
+                  display: flex;
+                  justify-content: space-between;
+            }
+      }
+      &__row-wrapp {
+            max-width: 160px;
+            @include minq(500px) {
+                  max-width: 200px;
+            }
+            &:first-of-type {
+                  padding: 0px 0px 0px 0px;
+            }
+      }
+      &__lable {
+      }
+      &__input {
+      }
+      &__btn-box-form {
+      }
+}

@@ -1,0 +1,26 @@
+.after-top-block {
+      &__wrapp {
+            padding: 40px 15px;
+      }
+      &__first-block {
+            padding: 0px 0px 40px 0px;
+      }
+      &__title {
+            @include font(500, 20px, $text-dark) {
+                  line-height: 25px;
+            }
+            padding: 0px 0px 30px 30px;
+            @include psevdo(0, 20px, 20px) {
+                  left: 0;
+                  top: 2px;
+                  background: url(#{$i}ok.svg) 0 0 / cover no-repeat;
+            }
+      }
+      &__text {
+            @include font(400, 16px, $p-color) {
+                  line-height: 25px;
+            }
+      }
+      &__first-second {
+      }
+}

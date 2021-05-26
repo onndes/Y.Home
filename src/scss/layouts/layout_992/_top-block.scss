@@ -1,0 +1,79 @@
+.top-block {
+      &__s {
+      }
+      &__wrapp {
+            display: flex;
+            justify-content: space-between;
+            padding: 110px 70px 0px 70px;
+            align-items: flex-end;
+            @include maxq(1129px) {
+                  padding: 110px 40px 0px 40px;
+            }
+      }
+      &__content-box {
+            flex: 1 1 600px;
+            margin: 0px 30px 0px 0px;
+      }
+      &__title {
+            font-size: rem(60px);
+            line-height: rem(80px);
+            @include maxq(1060px) {
+                  font-size: rem(55px);
+                  line-height: rem(75px);
+            }
+      }
+      &__text {
+      }
+      &__btn-box {
+      }
+      &__link-btn {
+            &_one {
+            }
+            &_two {
+            }
+      }
+      &__form-box {
+            flex: 1 1 524px;
+      }
+      &__form-wrapp {
+      }
+      &__h3 {
+            font-size: rem(24px);
+            padding: 10px 0px 60px 0px;
+            @include psevdo(1, 100%, 1px) {
+                  background-color: $p-color;
+                  opacity: 0.2;
+                  left: 0;
+                  bottom: 30px;
+            }
+      }
+      &__form {
+      }
+      &__input-box {
+            padding: 0px 0px 30px 0px;
+            &_row {
+                  display: flex;
+                  justify-content: space-between;
+            }
+            @include maxq(1060px)  {
+                  padding: 0px 0px 15px 0px;
+            }
+      }
+      &__row-wrapp {
+            max-width: 190px;
+
+            @include maxq(1060px) {
+                  max-width: 160px;
+            }
+      }
+      &__lable {
+            @include font(500, 18px, $grey);
+            padding: 0px 0px 12px 0px;
+      }
+      &__input {
+            padding: 10px 16px;
+      }
+      &__btn-box-form {
+            // padding: 0px 0px 30px 0px;
+      }
+}

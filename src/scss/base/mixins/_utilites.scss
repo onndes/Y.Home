@@ -1,0 +1,77 @@
+// !btn
+@mixin btn() {
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      color: white;
+      // text-shadow: $black 1px 1px 5px;
+      padding: 17px 20px;
+      background: $amaranth;
+      @content;
+}
+// !Font mixin
+@mixin font($fw: 400, $fz: 16px, $c: $text-dark) {
+      font-weight: $fw;
+      font-size: rem($fz);
+      color: $c;
+      @content;
+}
+
+// !Psevdo element
+@mixin psevdo($ba, $w, $h) {
+      & {
+            position: relative;
+      }
+      @if ($ba == 0) {
+            &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  width: $w;
+                  height: $h;
+                  @content;
+            }
+      }
+      @if ($ba == 1) {
+            &::after {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  width: $w;
+                  height: $h;
+                  @content;
+            }
+      }
+}
+
+// ==================================
+@function em($target, $current: $baseFontSize) {
+      @return ($target / $current) * 1em;
+}
+
+@function rem($target) {
+      @return ($target / $baseFontSize) * 1rem;
+}
+
+@mixin e($element) {
+      &__#{$element} {
+            @content;
+      }
+}
+
+@mixin m($modifier) {
+      &_#{$modifier} {
+            @content;
+      }
+}
+
+@mixin minq($width) {
+      @media (min-width: $width) {
+            @content;
+      }
+}
+@mixin maxq($width) {
+      @media (max-width: $width) {
+            @content;
+      }
+}

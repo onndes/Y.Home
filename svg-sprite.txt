@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="300">
+
+      <defs>
+
+            <g viewBox='0 0 50 50' id='white-s'>
+                  <path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill-rule="evenodd" clip-rule="evenodd" fill="#fff"></path>
+                  <path d="M49.3 25A24.3 24.3 0 11.6 25a24.3 24.3 0 0148.7 0z" fill="none" stroke="#eaeaea"></path>
+            </g>
+            <g viewBox='0 0 51 51' id='white-l'>
+                  <path d="M48 25a23 23 0 11-46 0 23 23 0 0146 0z" fill="none" stroke="#000"></path>
+                  <path d="M25 43.9A19 19 0 0043.9 25 19 19 0 0025 6.1 19 19 0 006.1 25 19 19 0 0025 43.9z" fill-rule="evenodd" clip-rule="evenodd"
+                        fill="#fff"></path>
+                  <path d="M43.4 25c0 10.2-8.2 18.4-18.4 18.4S6.6 35.2 6.6 25 14.8 6.6 25 6.6 43.4 14.8 43.4 25z" fill="none" stroke="#eaeaea"></path>
+            </g>
+
+
+            <g viewBox='0 0 50 50' id='rose-s'>
+                  <path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill-rule="evenodd" clip-rule="evenodd" fill="#dd5656"></path>
+                  <path d="M49.3 25A24.3 24.3 0 11.6 25a24.3 24.3 0 0148.7 0z" fill="none" stroke="#eaeaea"></path>
+            </g>
+            <g viewBox='0 0 51 51' id='rose-l'>
+                  <path d="M48 25a23 23 0 11-46 0 23 23 0 0146 0z" fill="none" stroke="#000"></path>
+                  <path d="M25 43.9A19 19 0 0043.9 25 19 19 0 0025 6.1 19 19 0 006.1 25 19 19 0 0025 43.9z" fill-rule="evenodd" clip-rule="evenodd"
+                        fill="#dd5656"></path>
+                  <path d="M43.4 25c0 10.2-8.2 18.4-18.4 18.4S6.6 35.2 6.6 25 14.8 6.6 25 6.6 43.4 14.8 43.4 25z" fill="none" stroke="#eaeaea"></path>
+            </g>
+
+
+            <g viewBox='0 0 50 50' id='black-s'>
+                  <path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                  <path d="M49.3 25A24.3 24.3 0 11.6 25a24.3 24.3 0 0148.7 0z" fill="none" stroke="#eaeaea"></path>
+            </g>
+            <g viewBox='0 0 51 51' id='black-l'>
+                  <path d="M48 25a23 23 0 11-46 0 23 23 0 0146 0z" fill="none" stroke="#000"></path>
+                  <path d="M25 43.9A19 19 0 0043.9 25 19 19 0 0025 6.1 19 19 0 006.1 25 19 19 0 0025 43.9z" fill-rule="evenodd" clip-rule="evenodd">
+                  </path>
+                  <path d="M43.4 25c0 10.2-8.2 18.4-18.4 18.4S6.6 35.2 6.6 25 14.8 6.6 25 6.6 43.4 14.8 43.4 25z" fill="none" stroke="#eaeaea"></path>
+            </g>
+
+
+      </defs>
+
+      <use x="0" y="0" xlink:href="#white-s" />
+      <use x="0" y="50" xlink:href="#white-l" />
+      <use x="0" y="100" xlink:href="#rose-s" />
+      <use x="0" y="150" xlink:href="#rose-l" />
+      <use x="0" y="200" xlink:href="#black-s" />
+      <use x="0" y="250" xlink:href="#black-l" />
+
+</svg>

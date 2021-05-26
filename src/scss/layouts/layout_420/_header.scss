@@ -1,0 +1,34 @@
+.header {
+      &__wrapp {
+      }
+      &__logo-wrapp {
+      }
+      &__logo-link {
+            font-size: rem(24px);
+      }
+      &__menu-wrapp {
+      }
+      &__icon-box {
+            
+      }
+      &__icon-span {
+            &_top {
+            }
+            &_center {
+            }
+            &_bottom {
+            }
+      }
+      &__menu {
+      }
+      &__menu-link {
+      }
+      &__menu-li {
+      }
+      &__book-now {
+            padding: 27px 25px;
+      }
+      &__book-now-link {
+            font-size: rem(16px);
+      }
+}
