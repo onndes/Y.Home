@@ -5,15 +5,33 @@ $(".slider-for").slick({
     arrows: false,
     //     fade: true,
     asNavFor: ".slider-nav",
+    autoplay: true,
+    autoplaySpeed: 5000,
 });
 $(".slider-nav").slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
     centerMode: false,
     focusOnSelect: true,
-//     variableWidth: true,
+    mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2,
+            },
+        },
+    ],
 });
 
 // ====================================
