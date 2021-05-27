@@ -1,0 +1,46 @@
+.check-comforts {
+      &__wrapp {
+      }
+      &__top-box {
+      }
+      &__title {
+      }
+      &__text {
+      }
+      &__gallery-box {
+      }
+      &__slider-box {
+            max-width: 700px;
+      }
+      &__button-box {
+            max-width: 280px;
+            display: flex;
+      }
+      &__link-btn {
+            &:first-of-type {
+                  margin: 0px 20px 0px 0px;
+            }
+      }
+}
+.slider-for {
+      &__box {
+            height: 370px;
+            &_1 {
+            }
+            &_2 {
+            }
+            &_3 {
+            }
+      }
+}
+.slider-nav {
+      &__box {
+            height: 80px;
+            &_1 {
+            }
+            &_2 {
+            }
+            &_3 {
+            }
+      }
+}
