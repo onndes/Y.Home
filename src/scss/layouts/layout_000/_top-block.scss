@@ -1,5 +1,5 @@
 .top-block {
-      background: url(../../../i/hero1.jpg) center 0 / cover no-repeat;
+      background: url(#{$i}hero1.jpg) center 0 / cover no-repeat;
       position: relative;
       &__s {
             position: absolute;
@@ -27,7 +27,7 @@
       }
       &__text {
             color: $e-color;
-            opacity: .7;
+            opacity: 0.7;
             line-height: rem(30px);
             font-size: rem(22px);
             font-weight: 400;
@@ -59,7 +59,6 @@
             padding: 25px;
       }
       &__h3 {
-            // text-align: center;
             padding: 10px 0px 40px 0px;
             @include font(600, 20px, $grey);
             @include psevdo(1, 100%, 1px) {
@@ -74,12 +73,10 @@
       &__input-box {
             padding: 0px 0px 20px 0px;
             &_row {
-                  
             }
       }
       &__row-wrapp {
             max-width: 200px;
-            // max-width: ;
             &:first-of-type {
                   padding: 0px 0px 20px 0px;
             }
@@ -107,6 +104,9 @@
             a {
                   @include btn() {
                         text-align: center;
+                        &:hover {
+                              background-color: $grey;
+                        }
                   }
             }
       }

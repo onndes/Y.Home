@@ -51,10 +51,12 @@ $(document).on("click", ".check-comforts__link", function () {
     const $this = $(this);
     $(".check-comforts__link").removeClass("select");
     $this.addClass("select");
+    $(".slider-for").slick("slickGoTo", 0);
     switch ($this.data("filter")) {
         case "lobby":
             toggleCalssSlider($("#lobby"));
             $(".check-comforts").css("background", "#D6EBEE");
+
             return;
         case "delux-twin-rooms":
             toggleCalssSlider($("#delux-twin-rooms"));
