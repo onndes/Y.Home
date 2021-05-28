@@ -1,13 +1,42 @@
+::selection {
+  background-color: $amaranth-o;
+}
 html {
-      font-size: 16px;
+  font-size: 16px;
 }
 body {
-      font-size: 1rem;
-      font-family: $fontFamily;
+  font-size: 1rem;
+  font-family: $fontFamily;
 }
 .container {
-      max-width: 1220px;
-      margin: auto;
+  max-width: 1220px;
+  margin: auto;
 }
 
-
+.uptop {
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  right: 10px;
+  background: $black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.3;
+  &.none {
+    display: none;
+  }
+  &:hover {
+    background: $amaranth;
+  }
+  &_svg {
+    width: 100%;
+    height: 100%;
+    @include psevdo(0, 15px, 15px) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      background: url(#{$i}white-arrow.svg) 0 0 / 100% auto no-repeat;
+    }
+  }
+}

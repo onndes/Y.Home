@@ -6,8 +6,7 @@ $(".slider-for").slick({
     slidesToScroll: 1,
     arrows: false,
     asNavFor: ".slider-nav",
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
+    waitForAnimate: false,
 });
 $(".slider-nav").slick({
     slidesToShow: 4,
@@ -19,6 +18,7 @@ $(".slider-nav").slick({
     focusOnSelect: true,
     mobileFirst: true,
     variableWidth: true,
+    waitForAnimate: false,
     responsive: [
         {
             breakpoint: 300,
@@ -43,6 +43,18 @@ $(".slider-nav").slick({
         },
     ],
 });
+
+/* 
+$(".slider-nav .slick-slide:not(.slick-current)::before").css({
+    'position': "absulute",
+    'display': "block",
+    'width': "100%",
+    'height': "100%",
+    'top': "0",
+    'left': "0",
+    'backgroundColor': "rgba(80, 80, 80, 0.616)",
+}); 
+*/
 
 // =====================================
 // button - select slider and change bacground color
@@ -80,13 +92,40 @@ function toggleCalssSlider(n) {
 }
 
 // =====================================
-//  SSM
+//  Button Scroll top ↓↓↓↓↓↓↓↓↓↓
+// =====================================
+const upTop = $(".uptop");
+upTop.on("click", handleScrollTop);
+function handleScrollTop(e) {
+    const interval = setInterval(() => {
+        const st = window.pageYOffset;
+        if (st <= 0) {
+            clearInterval(interval);
+        }
+
+        window.scrollBy(0, -15);
+        upTop.addClass("none");
+    }, 3);
+}
+$(document).on("mousewheel", handleOnScrollTop);
+function handleOnScrollTop() {
+    if (window.pageYOffset >= 400) {
+        upTop.removeClass("none");
+        return;
+    }
+    upTop.addClass("none");
+}
+
+// =====================================
+//  SSM ↓↓↓↓↓↓↓↓↓↓
 // =====================================
 function initMobile() {
+    if (window.pageYOffset >= 400) upTop.removeClass("none");
     console.log("is-mobile");
 }
 
 function initDesktop() {
+    upTop.addClass("none");
     console.log("is-desktop");
 }
 

@@ -9,11 +9,11 @@
 }
 /* Ограничивающая оболочка */
 .slick-list {
-      overflow: hidden;
+  overflow: hidden;
 }
 /* Лента слайдов */
 .slick-track {
-      display: flex;
+  display: flex;
 }
 /* Слайд */
 .slick-slide {
@@ -26,11 +26,21 @@
 }
 
 .slider-nav .slick-slide:not(.slick-current) {
-      @include psevdo(0, 100%, 100%) {
-            top: 0;
-            left: 0;
-            background-color: rgba(80, 80, 80, 0.616);
-      }
+  @include psevdo(0, 100%, 100%) {
+        top: 0;
+        left: 0;
+        background-color: rgba(80, 80, 80, 0.616);
+  }
+  &::before {
+    content: '';
+    position: absulute;
+    display: block;
+    width: "100%";
+    height: "100%";
+    top: 0;
+    left: 0;
+    background-Color: rgba(80, 80, 80, 0.616);
+  }
 }
 
 /* Слайд по центру */
