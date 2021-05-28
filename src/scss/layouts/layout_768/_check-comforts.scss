@@ -13,7 +13,7 @@
             max-width: 700px;
       }
       &__button-box {
-            max-width: 280px;
+            max-width: 380px;
             display: flex;
       }
       &__link-btn {
@@ -25,28 +25,10 @@
 .slider-for {
       &__box {
             height: 450px;
-            &_1 {
-                  background: url(../i/studios/1_check-comforts/1.jpg) right center / cover no-repeat;
-            }
-            &_2 {
-                  background: url(../i/studios/1_check-comforts/2.jpg) left center / cover no-repeat;
-            }
-            &_3 {
-                  background: url(../i/studios/1_check-comforts/3.jpg) center center / cover no-repeat;
-            }
       }
 }
 .slider-nav {
       &__box {
             height: 80px;
-            &_1 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/1.jpg) 0 0 / cover no-repeat;
-            }
-            &_2 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/2.jpg) 0 0 / cover no-repeat;
-            }
-            &_3 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/3.jpg) 0 0 / cover no-repeat;
-            }
       }
 }

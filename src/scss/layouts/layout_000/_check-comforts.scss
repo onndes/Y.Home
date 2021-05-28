@@ -3,11 +3,11 @@
       &__wrapp {
             max-width: 700px;
             margin: auto;
-            padding: 40px 0px 0px 0px;
+            padding: 40px 20px 0px 20px;
       }
       &__top-box {
             text-align: center;
-            padding: 0px 20px 50px 20px;
+            padding: 0px 0px 50px 0px;
       }
       &__title {
             @include font(700, 22px, $text-dark);
@@ -25,43 +25,72 @@
                   transform: translateX(-50%);
             }
       }
+      // btn select slider
+      &__button-select-box {
+            padding: 0px 0px 0px 0px;
+            text-align: center;
+      }
+      &__div-btn {
+            display: inline-block;
+            padding: 0px 10px 50px 10px;
+      }
+      &__link {
+            @include font(500, 16px, $grey);
+            padding: 0px 0px 6px 0px;
+            &:hover {
+                  color: $amaranth;
+            }
+            &.select {
+                  color: $amaranth;
+                  @include psevdo(0, 100%, 2px) {
+                        bottom: 0;
+                        left: 0;
+                        background-color: $amaranth;
+                  }
+            }
+      }
+
+      // slider
       &__gallery-box {
       }
       &__slider-box {
-            max-width: 500px;
+            max-width: 400px;
+
             margin: auto;
-            padding: 0px 10px 50px 10px;
+            padding: 0px 00px 50px 0px;
+            display: none;
+            &.active {
+                  display: inherit;
+            }
       }
       &__button-box {
             max-width: 180px;
             margin: auto;
             padding: 0px 0px 50px 0px;
       }
+      //btn
       &__link-btn {
             &:first-of-type {
                   margin: 0px 0px 15px 0px;
             }
             @include btn() {
                   text-align: center;
-                  padding: 12px 12px;
+                  // padding: 12px 12px;
             }
       }
 }
 
 .slider-for {
       &__box {
-            height: 250px;
+            height: 213px;
             @include maxq(419px) {
                   height: 200px;
             }
-            &_1 {
-                  background: url(../i/studios/1_check-comforts/1.jpg) right center / cover no-repeat;
-            }
-            &_2 {
-                  background: url(../i/studios/1_check-comforts/2.jpg) left center / cover no-repeat;
-            }
-            &_3 {
-                  background: url(../i/studios/1_check-comforts/3.jpg) center center / cover no-repeat;
+            img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                  object-position: center;
             }
       }
 }
@@ -71,14 +100,14 @@
             @include maxq(419px) {
                   height: 65px;
             }
-            &_1 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/1.jpg) 0 0 / cover no-repeat;
-            }
-            &_2 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/2.jpg) 0 0 / cover no-repeat;
-            }
-            &_3 {
-                  background: url(../../../i/studios/1_check-comforts/thumbs/3.jpg) 0 0 / cover no-repeat;
-            }
+      }
+}
+
+.check-comforts {
+      &__button-select-box {
+      }
+      &__div-btn {
+      }
+      &__link {
       }
 }
