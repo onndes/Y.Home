@@ -1,5 +1,6 @@
 ::selection {
   background-color: $amaranth-o;
+  color: $white;
 }
 html {
   font-size: 16px;
@@ -26,7 +27,7 @@ body {
   &.none {
     display: none;
   }
-  &:hover {
+  &:active {
     background: $amaranth;
   }
   &_svg {

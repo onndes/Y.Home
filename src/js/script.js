@@ -44,18 +44,6 @@ $(".slider-nav").slick({
     ],
 });
 
-/* 
-$(".slider-nav .slick-slide:not(.slick-current)::before").css({
-    'position': "absulute",
-    'display': "block",
-    'width': "100%",
-    'height': "100%",
-    'top': "0",
-    'left': "0",
-    'backgroundColor': "rgba(80, 80, 80, 0.616)",
-}); 
-*/
-
 // =====================================
 // button - select slider and change bacground color
 // =====================================
@@ -68,7 +56,6 @@ $(document).on("click", ".check-comforts__link", function () {
         case "lobby":
             toggleCalssSlider($("#lobby"));
             $(".check-comforts").css("background", "#D6EBEE");
-
             return;
         case "delux-twin-rooms":
             toggleCalssSlider($("#delux-twin-rooms"));

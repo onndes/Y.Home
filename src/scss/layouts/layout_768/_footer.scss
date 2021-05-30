@@ -1,0 +1,62 @@
+.footer {
+   &__wrapp {
+   }
+   &__main-block {
+      grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+      grid-template-rows: 1fr;
+      padding: 80px 30px 50px 30px;
+      
+   }
+   &__col {
+      &_contact {
+         grid-column: inherit;
+         justify-self: end;
+      }
+   }
+   &__title-col {
+   }
+   &__list {
+   }
+   &__li {
+   }
+   &__link {
+   }
+   &__text-addres {
+   }
+   &__tel-box {
+   }
+   &__tel-link {
+      @include maxq(823px) {
+         @include font(500, 18px, $black2);
+      }
+   }
+   &__social-icon-box {
+   }
+   &__icon {
+      &_facebook {
+      }
+      &_instagram {
+      }
+      &_pinterest {
+      }
+      &_apay {
+      }
+   }
+   &__copyright-block {
+   }
+   &__copyright-block-wrapp {
+      padding: 30px 20px 40px 20px;
+   }
+   &__wrapp-text {
+   }
+   &__text-copyright {
+   }
+   &__warpp-ul {
+   }
+   &__bottom-list {
+   }
+   &__bottom-li {
+   }
+   &__bottom-link {
+   }
+}

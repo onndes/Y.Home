@@ -13,8 +13,9 @@
             max-width: 700px;
       }
       &__button-box {
-            max-width: 380px;
+            max-width: 310px;
             display: flex;
+            justify-content: space-between;
       }
       &__link-btn {
             &:first-of-type {
