@@ -19,10 +19,10 @@
             <a href="##" class="header__logo-link"><span>Y.</span>Home</a>
          </div>
          <div class="header__menu-wrapp">
-            <div class="header__icon-box">
-               <span class="header__icon-span header__icon-span_top"></span>
-               <span class="header__icon-span header__icon-span_center"></span>
-               <span class="header__icon-span header__icon-span_bottom"></span>
+            <div id="menu-btn" class="header__icon-box">
+               <span></span>
+               <span></span>
+               <span></span>
             </div>
             <menu class="header__menu">
                <li class="header__menu-li"><a href="##" class="header__menu-link">Home</a></li>
@@ -34,9 +34,34 @@
                <a class="header__book-now-link" href="##">Book now</a>
             </div>
          </div>
+
       </div>
    </header>
    <!-- Heder end -->
+
+   <!-- Mobile menu start-->
+   <div id="mobile-menu" class="header-mobile__menu-wrapp">
+      <div class="header-mobile__menu">
+         <li class="header-mobile__menu-li"><a href="##" class="header-mobile__menu-link">Home</a></li>
+         <li class="header-mobile__menu-li"><a href="##" class="header-mobile__menu-link">About us</a></li>
+         <li class="header-mobile__menu-li has-submenu">
+            <a href="##" class="header-mobile__menu-link is-submenu">Tour</a>
+            <ul>
+               <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="##">Single</a></li>
+            </ul>
+         </li>
+         <!-- <li class="header-mobile__menu-li"><a href="##" class="header-mobile__menu-link">Contact us</a></li> -->
+         <!-- 123 -->
+         <li class="header-mobile__menu-li has-submenu">
+            <a href="##" class="header-mobile__menu-link is-submenu">Contact us</a>
+            <ul>
+               <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="#footer">Duo</a></li>
+            </ul>
+         </li>
+         <!-- 123 -->
+      </div>
+   </div>
+   <!-- Mobile menu end-->
 
    <!-- Top-block start -->
    <div class="top-block">
@@ -200,7 +225,7 @@
    <!-- check-comfotrs end -->
 
    <!-- footer start -->
-   <footer class="footer">
+   <footer id="footer" class="footer">
       <div class="footer__wrapp">
          <div class="footer__main-block">
 
@@ -280,7 +305,7 @@
    <script src="js/imagesloaded.pkgd.min.js"></script>
    <script src="js/isotope.pkgd.min.js"></script>
    <script src="js/smooth-scroll.min.js"></script>
-   <script src="js/filter.js"></script>
+   <!-- <script src="js/filter.js"></script> -->
    <script src="js/slick.min.js"></script>
    <script src="js/script.js"></script>
 

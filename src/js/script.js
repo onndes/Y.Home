@@ -79,7 +79,7 @@ function toggleCalssSlider(n) {
 }
 
 // =====================================
-//  Button Scroll top ↓↓↓↓↓↓↓↓↓↓
+//  Button Scroll top
 // =====================================
 const upTop = $(".uptop");
 upTop.on("click", handleScrollTop);
@@ -104,8 +104,47 @@ function handleOnScrollTop() {
 }
 
 // =====================================
-//  SSM ↓↓↓↓↓↓↓↓↓↓
+//  Burger menu
 // =====================================
+const menuBtn = $("#menu-btn");
+const mobileMenu = $("#mobile-menu");
+const isSubMenu = $(".is-submenu");
+const hasSubMenu = $(".has-submenu");
+
+menuBtn.on("click", handleBurgerMenu);
+isSubMenu.on("click", handeClickIsSubMenu);
+
+function resetHasSubMenu() {
+    hasSubMenu.siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide();
+}
+
+function handleBurgerMenu() {
+    const $this = $(this);
+    $this.toggleClass("active");
+    mobileMenu.slideToggle(300);
+    resetHasSubMenu();
+}
+function resetMobileMenu() {
+    menuBtn.removeClass("active");
+    mobileMenu.hide();
+    resetHasSubMenu();
+}
+
+function handeClickIsSubMenu() {
+    const $this = $(this);
+    $this.toggleClass("opened");
+    $this.next("ul").slideToggle(200);
+    $(this).parent(hasSubMenu).siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide();
+}
+
+// =====================================
+// smooth scroll
+// =====================================
+const scroll = new SmoothScroll("a[href*='#']", {});
+
+// ---------------------------------------
+//  SSM ↓↓↓↓↓↓↓↓↓↓
+// ---------------------------------------
 function initMobile() {
     if (window.pageYOffset >= 400) upTop.removeClass("none");
     console.log("is-mobile");
@@ -113,12 +152,13 @@ function initMobile() {
 
 function initDesktop() {
     upTop.addClass("none");
+    resetMobileMenu();
     console.log("is-desktop");
 }
 
 ssm.addState({
     id: "tablet",
-    query: "(max-width: 768px)",
+    query: "(max-width: 992px)",
     onEnter: function () {
         initMobile();
     },
@@ -126,7 +166,7 @@ ssm.addState({
 
 ssm.addState({
     id: "desktop",
-    query: "(min-width: 768px)",
+    query: "(min-width: 992px)",
     onEnter: function () {
         initDesktop();
     },

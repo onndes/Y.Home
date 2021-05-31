@@ -1,0 +1,96 @@
+.footer {
+   &__wrapp {
+      padding: 0px 15px;
+   }
+   // +main block
+   &__main-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      // justify-items: center;
+   }
+   &__for-flex {
+   }
+   &__col {
+      // padding: 0px 15px 0px 15px;
+   }
+   &__title-col {
+   }
+   &__list {
+   }
+   &__li {
+   }
+   &__link {
+   }
+   &__text-addres {
+   }
+   &__tel-box {
+   }
+   &__tel-link {
+   }
+   // +socioal box
+   &__social-icon-box {
+      display: flex;
+   }
+   &__icon {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      margin: 0px 20px 0px 0px;
+      transition: all 0.3s ease;
+      &_facebook {
+         background: url(../../../i/svg-social/sprite.svg) 0 -0px / 100% no-repeat;
+         &:hover {
+            background: url(../../../i/svg-social/sprite.svg) 0 -28px / 100% no-repeat;
+         }
+      }
+      &_instagram {
+         background: url(../../../i/svg-social/sprite.svg) 0 -56px / cover no-repeat;
+         &:hover {
+            background: url(../../../i/svg-social/sprite.svg) 0 -84px / cover no-repeat;
+         }
+      }
+      &_pinterest {
+         background: url(../../../i/svg-social/sprite.svg) 0 -112px / cover no-repeat;
+         &:hover {
+            background: url(../../../i/svg-social/sprite.svg) 0 -140px / cover no-repeat;
+         }
+      }
+      &_apay {
+         background: url(../../../i/svg-social/sprite.svg) 0 -168px / cover no-repeat;
+         &:hover {
+            background: url(../../../i/svg-social/sprite.svg) 0 -196px / cover no-repeat;
+         }
+      }
+   }
+   // +copyright-block
+   &__copyright-block {
+   }
+   &__wrapp-text {
+   }
+   &__text-copyright {
+   }
+   &__warpp-ul {
+   }
+   &__bottom-list {
+   }
+   &__bottom-li {
+   }
+   &__bottom-link {
+   }
+}
+
+.footer {
+   &__icon {
+      &_facebook {
+      }
+      &_instagram {
+      }
+      &_pinterest {
+      }
+      &_apay {
+      }
+   }
+}
