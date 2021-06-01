@@ -1,4 +1,17 @@
 //=================================
+// isMobile
+//=================================
+// prettier-ignore
+let isMobile = {
+	Android: function() {return navigator.userAgent.match(/Android/i);},
+	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+	iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+	Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+};
+
+//=================================
 // slick-slider check-comforts
 //=================================
 $(".slider-for").slick({
@@ -108,14 +121,16 @@ function handleOnScrollTop() {
 // =====================================
 const menuBtn = $("#menu-btn");
 const mobileMenu = $("#mobile-menu");
+const isSubMenuArrow = $(".menu__arrow");
 const isSubMenu = $(".is-submenu");
 const hasSubMenu = $(".has-submenu");
 
 menuBtn.on("click", handleBurgerMenu);
-isSubMenu.on("click", handeClickIsSubMenu);
+isSubMenuArrow.on("click", handeClickIsSubMenu);
 
 function resetHasSubMenu() {
     hasSubMenu.siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide();
+    hasSubMenu.siblings("li").find(".menu__arrow").removeClass("opened");
 }
 
 function handleBurgerMenu() {
@@ -133,14 +148,34 @@ function resetMobileMenu() {
 function handeClickIsSubMenu() {
     const $this = $(this);
     $this.toggleClass("opened");
-    $this.next("ul").slideToggle(200);
-    $(this).parent(hasSubMenu).siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide();
+    $this.parent("a").toggleClass("opened").next("ul").slideToggle(200);
+    $this.parent("a").parent(hasSubMenu).siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide(300);
+    $(this).parent("a").parent(hasSubMenu).siblings("li").find(".menu__arrow").removeClass("opened");
+}
+
+const body = $("body");
+if (isMobile.any()) {
+    body.addClass("touch");
+} else {
+    body.addClass("mouse");
 }
 
 // =====================================
 // smooth scroll
 // =====================================
 const scroll = new SmoothScroll("a[href*='#']", {});
+
+// =====================================
+// Desktop menu
+// =====================================
+const desktopMenuLi = $(".header__menu > .header__menu-li");
+desktopMenuLi.on("click", handleClickDesktopMenu);
+
+function handleClickDesktopMenu() {
+    const $this = $(this);
+    desktopMenuLi.removeClass("selected");
+    $this.addClass("selected");
+}
 
 // ---------------------------------------
 //  SSM ↓↓↓↓↓↓↓↓↓↓

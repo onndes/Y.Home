@@ -69,12 +69,10 @@
    }
    &__menu {
       display: none;
-      
    }
    &__menu-link {
    }
    &__menu-li {
-
    }
    &__book-now {
       background-color: $amaranth;
@@ -100,6 +98,7 @@ li {
 .header-mobile {
    &__menu-wrapp {
       display: none;
+
       &.active {
          display: block;
       }
@@ -122,20 +121,21 @@ li {
          background-color: $e-color;
       }
       &.is-submenu {
+         position: relative;
          display: block;
          width: 100%;
-         @include psevdo(1, 15px, 15px) {
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%) rotate(-90deg);
-            background: url(#{$i}grey-arrow.svg) 0 0 / cover no-repeat;
-            transition: all 0.2s ease;
-         }
+         // @include psevdo(1, 15px, 15px) {
+         //    right: 0;
+         //    top: 50%;
+         //    transform: translateY(-50%) rotate(-90deg);
+         //    background: url(#{$i}grey-arrow.svg) 0 0 / cover no-repeat;
+         //    transition: all 0.2s ease;
+         // }
          &.opened {
             color: $amaranth;
-            &::after {
-               transform: translateY(-50%) rotate(0deg);
-            }
+            // &::after {
+            //    transform: translateY(-50%) rotate(0deg);
+            // }
          }
          & + ul {
             display: none;
@@ -149,5 +149,21 @@ li {
             text-transform: uppercase;
          }
       }
+   }
+}
+.menu__arrow {
+   display: block;
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   opacity: 0.8;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%) rotate(-90deg);
+   background: url(#{$i}grey-arrow.svg) center center / 60% 60% no-repeat;
+   transition: all 0.2s ease;
+   &.opened {
+      color: $amaranth;
+      transform: translateY(-50%) rotate(0deg);
    }
 }
