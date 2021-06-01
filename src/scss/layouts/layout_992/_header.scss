@@ -43,11 +43,12 @@
       }
       &_has-sub-li {
          position: relative;
-         ul {
+         .header__sub-list {
             display: none;
          }
-         &:hover {
-            ul {
+
+         body.mouse &:hover {
+            .header__sub-list {
                transition: all 0.4s ease 0s;
                display: block;
                z-index: 500;
@@ -72,7 +73,7 @@
       @include font(600, 14px, $grey) {
          text-transform: uppercase;
       }
-      &:hover {
+      body.mouse &:hover {
          color: $amaranth;
       }
    }
@@ -84,7 +85,6 @@
 }
 
 .header {
-
    &__mobile-menu-wrapp {
       display: none;
       &.active {
@@ -106,5 +106,42 @@
    &__mobile-menu-li {
    }
    &__mobile-menu-link {
+   }
+}
+
+body.touch .header__sub-list.opened {
+   transition: all 0.4s ease 0s;
+   display: block;
+   z-index: 500;
+   position: absolute;
+   background-color: $white;
+   left: 0;
+   top: 70px;
+   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.39);
+   li {
+      width: 180px;
+      padding: 10px 10px;
+      transition: ease 0.2s all;
+   }
+}
+
+body.touch .header__menu-li_has-sub-li.parent-arrow {
+   margin: 0px 30px 0px 0px;
+}
+body.touch .menu__desktop-arrow {
+   z-index: 22;
+   display: block;
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   opacity: 0.8;
+   right: -30px;
+   top: 50%;
+   transform: translateY(-50%) rotate(0deg);
+   background: url(#{$i}grey-arrow.svg) center center / 60% 60% no-repeat;
+   transition: all 0.2s ease;
+   &.opened {
+      color: $amaranth;
+      transform: translateY(-50%) rotate(0deg);
    }
 }
