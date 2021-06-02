@@ -108,27 +108,28 @@
          <div class="top-block__form-box">
             <div class="top-block__form-wrapp">
                <h3 class="top-block__h3">Check Availability</h3>
-               <form action="" class="top-block__form">
+               <form id="form" action="" class="top-block__form" novalidate>
                   <div class="top-block__input-box top-block__input-box_row">
                      <div class="top-block__row-wrapp">
                         <label class="top-block__lable" for="check-in">Check-in</label>
-                        <input type="text" class="top-block__input" id="check-in" placeholder="MM/DD/YYYY" />
+                        <input type="date" class="top-block__input top-block__input_date _req _check-in" id="check-in" placeholder="MM/DD/YYYY" />
                      </div>
                      <div class="top-block__row-wrapp">
                         <label class="top-block__lable" for="check-out">Check-out</label>
-                        <input type="text" class="top-block__input" id="check-out" placeholder="MM/DD/YYYY" />
+                        <input type="date" class="top-block__input top-block__input_date _req _check-out" id="check-out" placeholder="MM/DD/YYYY" />
                      </div>
                   </div>
-                  <div class="top-block__input-box">
+                  <div class="top-block__input-box top-block__input-box_nog">
                      <label class="top-block__lable" for="n-o-g">Number of Guests</label>
-                     <input type="number" min="1" max="10" class="top-block__input" id="n-o-g" placeholder="1-10" />
+                     <input type="number" min="1" max="10" class="top-block__input _req _nog" id="n-o-g" placeholder="1-10" />
+                     <span class="top-block__span_guests">max guests 10</span>
                   </div>
                   <div class="top-block__input-box">
                      <label class="top-block__lable" for="email">Email Address</label>
-                     <input type="email" class="top-block__input" id="email" placeholder="user@website.com" />
+                     <input type="email" class="top-block__input _req _email" id="email" placeholder="user@website.com" />
                   </div>
                   <div class="top-block__btn-box-form">
-                     <a href="##">Send Email</a>
+                     <button type="submit">Send Email</button>
                   </div>
                </form>
             </div>
