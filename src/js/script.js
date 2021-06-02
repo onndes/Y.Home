@@ -10,7 +10,9 @@ let isMobile = {
 	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
-
+// if (isMobile.any()) {
+//     window.location.reload();
+// }
 //=================================
 // slick-slider check-comforts
 //=================================
@@ -161,16 +163,16 @@ const scroll = new SmoothScroll("a[href*='#']", {});
 // =====================================
 // Desktop menu
 // =====================================
-const desktopMenuLi = $(".header__menu > .header__menu-li");
-if (!isMobile.any()) {
-    desktopMenuLi.on("click", handleClickDesktopMenu);
-
-    function handleClickDesktopMenu() {
-        const $this = $(this);
-        desktopMenuLi.removeClass("selected");
-        $this.addClass("selected");
-    }
-}
+// Смысла от этого нету
+// const desktopMenuLi = $(".header__menu > .header__menu-li");
+// if (!isMobile.any()) {
+//     desktopMenuLi.on("click", handleClickDesktopMenu);
+//     function handleClickDesktopMenu() {
+//           const $this = $(this);
+//           desktopMenuLi.removeClass("selected");
+//           $this.addClass("selected");
+//     }
+// }
 const body = $("body");
 if (isMobile.any()) {
     body.addClass("touch");
@@ -178,8 +180,7 @@ if (isMobile.any()) {
     $(".header__menu-li_has-sub-li").addClass("parent-arrow");
     desktopArrow.on("click", handeleClickArrowMenu);
     function handeleClickArrowMenu() {
-        console.log($(this).parent("a").next("ul"));
-        $(this).parent("a").next("ul").toggleClass("opened");
+        $(this).next("ul").toggleClass("opened");
         $(this).closest("li").siblings("li").find("ul").removeClass("opened");
     }
 } else {
