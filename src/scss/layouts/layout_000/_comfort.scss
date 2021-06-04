@@ -1,0 +1,73 @@
+.comfort {
+   background-color: $lite-orange;
+   &__wrapp {
+      padding: 60px 0px 60px 0px;
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   }
+   &__item-box {
+   }
+   &__title {
+      @include font(600, 18px, $grey);
+      padding: 40px 0px 20px 0px;
+      @include psevdo(0, 1.5rem, 1.5rem) {
+         top: 0;
+         left: 0;
+         background: url(#{$i}ico-rose/sprite.svg) 0 0 / cover no-repeat;
+      }
+      &_1 {
+         &::before {
+            opacity: 0.7;
+         }
+      }
+
+      &_2 {
+         &::before {
+            background-position: 0 -1.5rem;
+         }
+      }
+      &_3 {
+         &::before {
+            background-position: 0 -3rem;
+         }
+      }
+      &_4 {
+         &::before {
+            background-position: 0 -4.5rem;
+         }
+      }
+      &_5 {
+         &::before {
+            background-position: 0 -6rem;
+         }
+      }
+      &_6 {
+         &::before {
+            background-position: 0 -7.5rem;
+         }
+      }
+      &_7 {
+         &::before {
+            background-position: 0 -9rem;
+         }
+      }
+      &_8 {
+         &::before {
+            background-position: 0 -10.5rem;
+         }
+      }
+      &_9 {
+         &::before {
+            background-position: 0 -12rem;
+         }
+      }
+   }
+   &__text {
+      @include font(400, 16px, $p-color) {
+         line-height: 22px;
+      }
+   }
+}
+.container {
+}
