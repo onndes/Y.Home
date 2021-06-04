@@ -107,10 +107,11 @@ li {
       padding: 0px 20px 0px 20px;
    }
    &__menu-li {
+      position: relative;
    }
    &__menu-link {
       display: block;
-      padding: 15px 0px 15px 0px;
+      padding: 15px 70px 15px 0px;
       @include font(700, 13px, $bown) {
          text-transform: uppercase;
          letter-spacing: 1px;
@@ -127,7 +128,6 @@ li {
 
          &.opened {
             color: $amaranth;
-
          }
          & + ul {
             display: none;
@@ -141,6 +141,15 @@ li {
             text-transform: uppercase;
          }
       }
+      &.this {
+         color: $amaranth;
+         // @include psevdo(1, 3px, 100%) {
+         //    left: -20px;
+         //    // top: 10px;
+         //    top: 0;
+         //    background-color: $amaranth;
+         // }
+      }
    }
 }
 .menu__arrow {
@@ -150,12 +159,13 @@ li {
    position: absolute;
    opacity: 0.8;
    right: 0;
-   top: 50%;
-   transform: translateY(-50%) rotate(-90deg);
+   top: 5px;
+   // top: 50%;
+   // transform: translateY(-50%) rotate(-90deg);
    background: url(#{$i}grey-arrow.svg) center center / 60% 60% no-repeat;
    transition: all 0.2s ease;
    &.opened {
       color: $amaranth;
-      transform: translateY(-50%) rotate(0deg);
+      transform: rotate(-180deg);
    }
 }

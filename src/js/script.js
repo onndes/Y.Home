@@ -125,11 +125,14 @@ function handleOnScrollTop() {
 const menuBtn = $("#menu-btn");
 const mobileMenu = $("#mobile-menu");
 const isSubMenuArrow = $(".menu__arrow");
-const isSubMenu = $(".is-submenu");
 const hasSubMenu = $(".has-submenu");
+const linkBurgerMenu = $(".header-mobile__menu-link");
 
 menuBtn.on("click", handleBurgerMenu);
 isSubMenuArrow.on("click", handeClickIsSubMenu);
+linkBurgerMenu.on("click", function () {
+    resetMobileMenu();
+});
 
 function resetHasSubMenu() {
     hasSubMenu.siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide();
@@ -144,16 +147,16 @@ function handleBurgerMenu() {
 }
 function resetMobileMenu() {
     menuBtn.removeClass("active");
-    mobileMenu.hide();
+    mobileMenu.hide(300);
     resetHasSubMenu();
 }
 
 function handeClickIsSubMenu() {
     const $this = $(this);
     $this.toggleClass("opened");
-    $this.parent("a").toggleClass("opened").next("ul").slideToggle(200);
-    $this.parent("a").parent(hasSubMenu).siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide(300);
-    $(this).parent("a").parent(hasSubMenu).siblings("li").find(".menu__arrow").removeClass("opened");
+    $this.next("ul").slideToggle(200);
+    $this.parent(hasSubMenu).siblings("li").children(".is-submenu").removeClass("opened").siblings("ul").hide(300);
+    $this.parent(hasSubMenu).siblings("li").find(".menu__arrow").removeClass("opened");
 }
 
 // =========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -276,7 +279,6 @@ function handleCliclFaqTitle() {
     $this.toggleClass("open");
     $this.next("p").slideToggle(300);
     $this.parent("div").siblings("div").children("h4").removeClass("open");
-    console.log($this.parent("div").siblings("div").children("h4"));
     $this.parent("div").siblings("div").children("p").hide(300);
 }
 // =========================================================================================================================================================================================================================================================================================================================================================
