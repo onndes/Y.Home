@@ -1,0 +1,58 @@
+.bed-breakfast {
+   &__wrapp {
+      grid-gap: 15px;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+   }
+   &__box-content {
+   }
+   &__title {
+      position: relative;
+      background-color: $white;
+      margin: 0px -90px 0px 0px;
+      text-align: right;
+      padding: 25px;
+      font-size: 45px;
+      line-height: 55px;
+   }
+   &__box-slide {
+   }
+   &__item-slide {
+   }
+   &__text {
+   }
+   &__name {
+   }
+   &__inc {
+   }
+   &__box-btn-slide {
+   }
+   &__mydots {
+   }
+   &__box-logo {
+   }
+   &__logo {
+      &_1 {
+      }
+      &_2 {
+      }
+      &_3 {
+      }
+   }
+   &__img-box {
+      max-height: 600px;
+      // max-width: 439px;
+   }
+}
+.container {
+}
+.mydots {
+   ul {
+      li {
+         button {
+            width: 11px;
+            height: 11px;
+         }
+      }
+   }
+}

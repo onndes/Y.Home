@@ -1,0 +1,52 @@
+.bed-breakfast {
+   &__wrapp {
+      grid-gap: 15px;
+      grid-template-columns: 1fr 300px;
+   }
+   &__box-content {
+   }
+   &__title {
+   }
+   &__box-slide {
+   }
+   &__item-slide {
+   }
+   &__text {
+      text-align: right;
+   }
+   &__name {
+      text-align: right;
+   }
+   &__inc {
+      text-align: right;
+   }
+   &__box-btn-slide {
+   }
+   &__mydots {
+   }
+   &__box-logo {
+   }
+   &__logo {
+      &_1 {
+      }
+      &_2 {
+      }
+      &_3 {
+      }
+   }
+   &__img-box {
+   }
+}
+.container {
+}
+.mydots {
+   ul {
+      justify-content: flex-end;
+      li {
+         button {
+            width: 11px;
+            height: 11px;
+         }
+      }
+   }
+}

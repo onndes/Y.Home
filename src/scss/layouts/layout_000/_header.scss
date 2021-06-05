@@ -108,6 +108,9 @@ li {
    }
    &__menu-li {
       position: relative;
+      &.has-submenu ul {
+         display: none;
+      }
    }
    &__menu-link {
       display: block;
