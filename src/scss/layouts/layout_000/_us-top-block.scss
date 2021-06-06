@@ -1,0 +1,42 @@
+.us-top-block {
+  position: relative;
+  &__wrapp {
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding: 250px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &__title {
+    @include font(800, 40px, $white) {
+    }
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    @include minq(450px) {
+      font-size: rem(65px);
+    }
+    @include minq(576px) {
+      font-size: rem(75px);
+    }
+  }
+  &__text-1 {
+    @include font(500, 20px, $amaranth);
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    letter-spacing: 2px;
+  }
+  &__text-2 {
+    @include font(800, 14px, $white);
+    text-align: center;
+    opacity: 0.7;
+  }
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

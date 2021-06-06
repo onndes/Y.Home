@@ -22,7 +22,7 @@
    &__question-title {
       cursor: pointer;
       @include font(600, 18px, $text-dark);
-      padding: 0px 20px 15px 0px;
+      padding: 7px 20px 7px 0px;
       @include psevdo(0, 10px, 1px) {
          right: 0;
          top: 7px;
@@ -39,7 +39,7 @@
    }
    &__question-text {
       display: none;
-      padding: 15px 15px 15px 0px;
+      padding: 0px 15px 0px 0px;
       @include font(500, 15px, $grey2) {
          line-height: 24px;
          text-align: justify;

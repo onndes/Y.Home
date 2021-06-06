@@ -1,0 +1,22 @@
+.us-video {
+  &__wrapp {
+    padding: 0px 0px 60px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
+    justify-content: center;
+  }
+  &__video-box {
+    position: relative;
+    padding: 0px 0px 54% 0px;
+  }
+  &__video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.container {
+}
