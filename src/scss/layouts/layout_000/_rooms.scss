@@ -1,0 +1,126 @@
+.rooms {
+  &__wrapp {
+    padding: 80px 0px;
+    display: grid;
+    grid-template-columns: minmax(200px, 540px);
+    grid-gap: 100px;
+    justify-content: center;
+  }
+  &__room-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    align-items: center;
+  }
+  &__description-box {
+    grid-row: 1;
+    grid-column: 1;
+    &_revers {
+      //  grid-column: 2;
+    }
+  }
+  &__location {
+    @include font(500, 16px, $amaranth);
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 10px 0px;
+    @include psevdo(0, 15px, 15px) {
+      left: 0;
+      top: 0;
+      background: url(#{$i}ico/geo_icon.svg);
+    }
+  }
+  &__name {
+    @include font(500, 26px, $text-dark);
+    padding: 0px 0px 20px 0px;
+  }
+  &__text {
+    @include font(400, 16px, $p-color) {
+      line-height: 22px;
+    }
+    padding: 0px 0px 20px 0px;
+  }
+  &__price {
+    @include font(600, 44px, $text-dark);
+    span {
+      @include font(500, 20px, $grey2);
+    }
+  }
+  &__comforts-box {
+    padding: 20px 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__comforts-col {
+  }
+  &__comforts-comfort {
+    max-width: 100px;
+    padding: 10px 0px 10px 25px;
+    @include font(400, 16px, $text-dark) {
+      line-height: 20px;
+    }
+    @include psevdo(0, 1rem, 1rem) {
+      left: 0;
+      top: 10px;
+      background: url(#{$i}ico-black/sprite.svg) 0 0 / cover no-repeat;
+    }
+    @include minq(400px) {
+      max-width: 100%;
+    }
+    border-bottom: 1px solid $e-color;
+    &_wifi {
+      &::before {
+        background-position: 0 0;
+      }
+    }
+    &_coffy {
+      &::before {
+        background-position: 0 -1rem;
+      }
+    }
+    &_clock {
+      &::before {
+        background-position: 0 -2rem;
+      }
+    }
+    &_lock {
+      &::before {
+        background-position: 0 -3rem;
+      }
+    }
+    &_box {
+      &::before {
+        background-position: 0 -4rem;
+      }
+    }
+    &_gamepas {
+      &::before {
+        background-position: 0 -5rem;
+      }
+    }
+  }
+  &__btn-box {
+  }
+  &__btn-link {
+    @include btn() {
+      display: inline-block;
+    }
+  }
+  &__img-box {
+    max-width: 900%;
+    justify-self: center;
+    &_l {
+      box-shadow: -15px -15px 0 0px $lite-orange2;
+    }
+    &_r {
+      box-shadow: 15px -15px 0 0px $lite-orange2;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 100%;
+    // display: block;
+  }
+}
+.container {
+}

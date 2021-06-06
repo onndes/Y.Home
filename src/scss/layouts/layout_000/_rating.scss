@@ -36,16 +36,23 @@
    &__star-list {
       display: flex;
       margin: 0px 0px 10px 0px;
+
+      max-width: 91px;
+      @include psevdo(0, 93%, 100%) {
+         top: 0;
+         left: 0;
+         background-color: $amaranth;
+      }
    }
    &__star-li {
       height: 1rem;
-      width: 1rem;
-      margin: 0px 5px 0px 0px;
+      width: 1.2rem;
+      margin: 0px -1px 0px 0px;
       @include psevdo(0, 100%, 100%) {
-         border-radius: 4px;
+         // border-radius: 4px;
          left: 0;
          top: 0;
-         background: url(../../../i/ico/star-rating.svg) 0 0 / cover no-repeat;
+         background: url(../../../i/ico/star-rating2.svg) 0 0 / cover no-repeat;
       }
    }
    &__stat-text {

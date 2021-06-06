@@ -1,0 +1,62 @@
+.rooms {
+  &__wrapp {
+    grid-template-columns: 1fr;
+  }
+  &__room-box {
+    grid-template-columns: 1fr 1fr;
+    
+    &_rs {
+    }
+  }
+  &__description-box {
+    grid-row: 1;
+    grid-column: 1;
+    &_revers {
+       grid-column: 2;
+    }
+  }
+  &__location {
+  }
+  &__name {
+  }
+  &__text {
+  }
+  &__price {
+  }
+  &__comforts-box {
+  }
+  &__comforts-col {
+  }
+  &__comforts-comfort {
+    &_wifi {
+    }
+    &_coffy {
+    }
+    &_clock {
+    }
+    &_lock {
+    }
+    &_box {
+    }
+    &_gamepas {
+    }
+  }
+  &__btn-box {
+  }
+  &__btn-link {
+  }
+  &__img-box {
+    &_l {
+    }
+    &_r {
+    }
+  }
+  &__img {
+    &_l {
+    }
+    &_r {
+    }
+  }
+}
+.container {
+}
