@@ -1,0 +1,39 @@
+.black-block {
+  background: url(../../../i/hero.jpg) center center / cover no-repeat;
+  &__wrapp {
+    padding: 150px 0;
+  }
+  &__title {
+    text-align: center;
+    @include font(400, 30px, $white) {
+      line-height: 35px;
+    }
+    @include minq(450px) {
+      font-size: rem(31px);
+      line-height: 45px;
+    }
+    @include minq(576px) {
+      font-size: rem(40px);
+      line-height: 55px;
+    }
+    @include minq(640px) {
+      font-size: rem(45px);
+      line-height: 55px;
+    }
+    @include minq(768px) {
+      font-size: rem(48px);
+      line-height: 55px;
+    }
+    padding: 0px 0px 40px 0px;
+  }
+  &__btn-box {
+    text-align: center;
+  }
+  &__btn-link {
+    @include btn() {
+      display: inline-block;
+    }
+  }
+}
+.container {
+}
