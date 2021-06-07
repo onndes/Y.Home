@@ -5,8 +5,11 @@
   &__content {
     position: relative;
     z-index: 2;
-    padding: 250px 10px;
+    padding: 150px 10px;
     background-color: rgba(0, 0, 0, 0.3);
+    @include minq(576px) {
+      padding: 250px 10px;
+    }
   }
   &__title {
     @include font(800, 40px, $white) {
