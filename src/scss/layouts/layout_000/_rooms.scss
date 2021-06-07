@@ -3,13 +3,13 @@
     padding: 80px 0px;
     display: grid;
     grid-template-columns: minmax(200px, 540px);
-    grid-gap: 100px;
+    grid-gap: 20px;
     justify-content: center;
   }
   &__room-box {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 60px;
+    grid-gap: 80px;
     align-items: center;
   }
   &__description-box {

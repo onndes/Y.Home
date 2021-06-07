@@ -1,6 +1,7 @@
 .rooms {
   &__wrapp {
     grid-template-columns: 1fr;
+    grid-gap: 90px;
   }
   &__room-box {
     grid-template-columns: 1fr 1fr;
