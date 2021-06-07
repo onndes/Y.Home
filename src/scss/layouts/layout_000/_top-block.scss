@@ -1,139 +1,142 @@
 .top-block {
-   background: url(#{$i}hero1.jpg) center 0 / cover no-repeat;
-   position: relative;
-   &__s {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: black;
+  background: url(#{$i}hero1.jpg) center 0 / cover no-repeat;
+  position: relative;
+  &__s {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.2;
+  }
+  &__wrapp {
+    max-width: 1420px;
+    margin: auto;
+    position: relative;
+    padding: 0 17px;
+    z-index: 1;
+  }
+  &__content-box {
+    max-width: 600px;
+  }
+  &__title {
+    padding: 90px 0px 40px 0px;
+    color: $white;
+    font-size: rem(30px);
+    line-height: rem(50px);
+    font-weight: 600;
+  }
+  &__text {
+    color: $e-color;
+    opacity: 0.7;
+    line-height: rem(30px);
+    font-size: rem(22px);
+    font-weight: 400;
+    padding: 0px 0px 40px 0px;
+  }
+  &__btn-box {
+    max-width: 150px;
+    text-align: center;
+    padding: 0px 0px 90px 0px;
+  }
+  &__link-btn {
+    @include btn() {
+    }
+    &_one {
+      margin: 0px 0px 10px 0px;
+    }
+    &_two {
+      background-color: $white;
+      color: $black;
+      text-shadow: none;
+    }
+  }
+  // form ----------
+  &__form-box {
+    background-color: white;
+    max-width: 524px;
+  }
+  &__form-wrapp {
+    padding: 25px;
+  }
+  &__h3 {
+    padding: 10px 0px 40px 0px;
+    @include font(600, 20px, $grey);
+    @include psevdo(1, 100%, 1px) {
+      background-color: $p-color;
       opacity: 0.2;
-   }
-   &__wrapp {
-      max-width: 1420px;
-      margin: auto;
+      left: 0;
+      bottom: 20px;
+    }
+  }
+  &__form {
+  }
+  &__input-box {
+    padding: 0px 0px 20px 0px;
+    &_row {
+    }
+    &_nog {
       position: relative;
-      padding: 0 17px;
-      z-index: 1;
-   }
-   &__content-box {
-      max-width: 600px;
-   }
-   &__title {
-      padding: 90px 0px 40px 0px;
-      color: $white;
-      font-size: rem(30px);
-      line-height: rem(50px);
-      font-weight: 600;
-   }
-   &__text {
-      color: $e-color;
-      opacity: 0.7;
-      line-height: rem(30px);
-      font-size: rem(22px);
-      font-weight: 400;
-      padding: 0px 0px 40px 0px;
-   }
-   &__btn-box {
-      max-width: 150px;
-      text-align: center;
-      padding: 0px 0px 90px 0px;
-   }
-   &__link-btn {
-      @include btn() {
-      }
-      &_one {
-         margin: 0px 0px 10px 0px;
-      }
-      &_two {
-         background-color: $white;
-         color: $black;
-         text-shadow: none;
-      }
-   }
-   // form ----------
-   &__form-box {
-      background-color: white;
-      max-width: 524px;
-   }
-   &__form-wrapp {
-      padding: 25px;
-   }
-   &__h3 {
-      padding: 10px 0px 40px 0px;
-      @include font(600, 20px, $grey);
-      @include psevdo(1, 100%, 1px) {
-         background-color: $p-color;
-         opacity: 0.2;
-         left: 0;
-         bottom: 20px;
-      }
-   }
-   &__form {
-   }
-   &__input-box {
+    }
+  }
+  &__row-wrapp {
+    max-width: 200px;
+    &:first-of-type {
       padding: 0px 0px 20px 0px;
-      &_row {
-      }
-      &_nog {
-         position: relative;
-      }
-   }
-   &__row-wrapp {
-      max-width: 200px;
-      &:first-of-type {
-         padding: 0px 0px 20px 0px;
-      }
-   }
-   &__lable {
+    }
+  }
+  &__lable {
+    display: block;
+    @include font(500, 16px, $grey) {
+    }
+    position: relative;
+    &:after {
+      content: "*";
+      color: $amaranth;
+    }
+    padding: 0px 0px 6px 0px;
+  }
+  &__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.541);
+    font-size: rem(15px);
+    &_date {
+      background-color: $white;
+    }
+    &.focus {
+      background-color: $white;
+    }
+    &._error {
+      border: 1px solid rgba(231, 11, 11, 0.856);
+    }
+  }
+  date {
+    color: red;
+  }
+  &__span_guests {
+    display: none;
+    padding: 3px 0px 0px 0px;
+    font-size: rem(13px);
+    color: rgba(231, 11, 11, 0.856);
+    &._error {
       display: block;
-      @include font(500, 16px, $grey) {
-      }
-      position: relative;
-      &:after {
-         content: "*";
-         color: $amaranth;
-      }
-      padding: 0px 0px 6px 0px;
-   }
-   &__input {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__btn-box-form {
+    button {
       width: 100%;
-      max-width: 100%;
-      padding: 5px 8px;
-      border: 1px solid rgba(128, 128, 128, 0.541);
-      font-size: rem(15px);
-      &_date {
-         background-color: $white;
+      @include btn() {
+        // color: rgb(170, 205, 207);
+        text-align: center;
+        &:hover {
+          background-color: $grey;
+        }
       }
-      &.focus {
-         background-color: $white;
-      }
-      &._error {
-         border: 1px solid rgba(231, 11, 11, 0.856);
-      }
-   }
-   &__span_guests {
-      display: none;
-      padding: 3px 0px 0px 0px;
-      font-size: rem(13px);
-      color: rgba(231, 11, 11, 0.856);
-      &._error {
-         display: block;
-         position: absolute;
-         right: 0;
-      }
-   }
-   &__btn-box-form {
-      button {
-         width: 100%;
-         @include btn() {
-            // color: rgb(170, 205, 207);
-            text-align: center;
-            &:hover {
-               background-color: $grey;
-            }
-         }
-      }
-   }
+    }
+  }
 }
