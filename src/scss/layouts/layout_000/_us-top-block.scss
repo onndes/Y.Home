@@ -6,7 +6,7 @@
     position: relative;
     z-index: 2;
     padding: 250px 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   &__title {
     @include font(800, 40px, $white) {
@@ -18,6 +18,11 @@
     }
     @include minq(576px) {
       font-size: rem(75px);
+    }
+    &.tour {
+      font-weight: 300;
+      padding: 0px 0px 0px 70px;
+      text-align: left;
     }
   }
   &__text-1 {
