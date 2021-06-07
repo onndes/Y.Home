@@ -1,0 +1,16 @@
+.awards {
+  &__wrapp {
+  }
+  &__title {
+  }
+  &__text {
+  }
+  &__logo-box {
+    grid-template-columns: repeat(3, minmax(60px, 180px));
+    grid-template-rows: 1fr 1fr;
+  }
+  &__logo-box-img {
+  }
+}
+.container {
+}
