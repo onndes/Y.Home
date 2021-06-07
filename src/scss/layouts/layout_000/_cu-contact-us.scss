@@ -1,0 +1,17 @@
+.contact-us {
+  background-color: $bg-color2;
+  &__wrapp {
+    padding: 130px 0;
+    text-align: center;
+  }
+  &__title {
+    @include font(300, 46px, $text-dark);
+    padding: 0px 0px 20px 0px;
+  }
+  &__text {
+    @include font(300, 20px, $amaranth);
+    letter-spacing: 1px;
+  }
+}
+.container {
+}
