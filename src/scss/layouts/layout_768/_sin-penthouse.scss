@@ -1,0 +1,46 @@
+.sin-penthouse {
+  &__wrapp {
+  }
+  &__location-name {
+  }
+  &__title {
+  }
+  &__text {
+    &_one {
+    }
+    &_two {
+    }
+    &_tree {
+    }
+  }
+  &__service-grid-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__service-box {
+  }
+  &__service {
+    &:last-of-type {
+      border-bottom: none;
+    }
+    &_1 {
+    }
+    &_2 {
+    }
+    &_3 {
+    }
+    &_4 {
+    }
+    &_5 {
+    }
+    &_6 {
+    }
+    &_7 {
+    }
+    &_8 {
+    }
+    &_9 {
+    }
+  }
+  &__text-span {
+  }
+}

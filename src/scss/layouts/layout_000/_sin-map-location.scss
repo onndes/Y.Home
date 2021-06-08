@@ -1,0 +1,15 @@
+.sin-map-location {
+  &__title {
+    @include font(500, 26px, $text-dark);
+    padding: 0px 0px 20px 0px;
+  }
+  &__wrapp {
+    padding: 40px 0px;
+    border-top: 1px solid $e-color;
+    border-bottom: 1px solid $e-color;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.sin-penthouse {
+  &__wrapp {
+  }
+  &__location-name {
+  }
+  &__title {
+  }
+  &__text {
+    &_one {
+    }
+    &_two {
+    }
+    &_tree {
+    }
+  }
+
+  &__service-grid-box {
+    padding: 0px 0px 20px 0px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  &__service-box {
+    &:last-of-type .sin-penthouse__service:last-of-type {
+      border-bottom: none;
+    }
+    &:nth-child(2) .sin-penthouse__service:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__service {
+  }
+
+  &__text-span {
+    
+  }
+}

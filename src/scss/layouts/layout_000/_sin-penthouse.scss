@@ -1,0 +1,114 @@
+.sin-penthouse {
+  &__wrapp {
+    // border-top: 1px solid $e-color;
+    padding: 0px 0px 50px 0px;
+  }
+  &__location-name {
+    @include font(500, 16px, $amaranth);
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 10px 0px;
+    @include psevdo(0, 15px, 15px) {
+      left: 0;
+      top: 0;
+      background: url(#{$i}ico/geo_icon.svg);
+    }
+  }
+  &__title {
+    @include font(500, 26px, $text-dark);
+    padding: 0px 0px 20px 0px;
+  }
+  &__text {
+    @include font(400, 16px, $p-color) {
+      line-height: 22px;
+    }
+    padding: 0px 0px 20px 0px;
+    &_one {
+    }
+    &_two {
+    }
+    &_tree {
+    }
+  }
+  &__service-grid-box {
+    padding: 0px 0px 20px 20px;
+  }
+  &__service-box {
+    &:last-of-type .sin-penthouse__service:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__service {
+    @include font(400, 16px, $grey);
+    padding: 10px 0px 10px 20px;
+    @include psevdo(0, 1rem, 1rem) {
+      opacity: 0.8;
+      top: 10px;
+      left: 0;
+      background: url(#{$i}ico-rose/sprite.svg) 0 0 / cover no-repeat;
+    }
+    max-width: 200px;
+    border-bottom: 1px solid $e-color;
+    &_1 {
+    }
+    &_2 {
+      &:before {
+        background-position: 0 -1rem;
+      }
+    }
+    &_3 {
+      &:before {
+        background-position: 0 -7rem;
+      }
+    }
+    &_4 {
+      &:before {
+        background-position: 0 -3rem;
+      }
+    }
+    &_5 {
+      &:before {
+        background-position: 0 -4rem;
+      }
+    }
+    &_6 {
+      &:before {
+        background-position: 0 -6rem;
+      }
+    }
+    &_7 {
+      &:before {
+        background-position: 0 -1rem;
+      }
+    }
+    &_8 {
+      &:before {
+        background-position: 0 -5rem;
+      }
+    }
+    &_9 {
+      &:before {
+        background-position: 0 -7rem;
+      }
+    }
+  }
+  &__text-span {
+    color: $amaranth;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &__text-span-bold {
+    font-weight: 500;
+    color: $text-dark;
+  }
+
+  &__hide-p-block {
+    display: none;
+    &.open {
+      display: none;
+    }
+  }
+  &__text-title {
+    @include font(500, 18px, $text-dark);
+    padding: 0px 0px 10px 0px;
+  }
+}

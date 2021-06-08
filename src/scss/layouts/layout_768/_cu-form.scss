@@ -12,8 +12,13 @@
   &__box {
   }
   &__title {
+    @include font(600, 20px, $grey2);
+    padding: 0px 0px 10px 0px;
   }
   &__text {
+    @include font(300, 20px, $p-color);
+    line-height: 36px;
+    padding: 0px 0px 30px 0px;
   }
   &__form {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
