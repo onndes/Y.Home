@@ -1,0 +1,78 @@
+.sin-slider {
+  &__wrapp {
+    position: relative;
+    margin: 0px 0px 50px 0px;
+  }
+  &__slider-box {
+  }
+  &__item {
+  }
+  &__img {
+    // object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+  }
+  &__btn-box-slider {
+  }
+  &__mydots {
+  }
+}
+
+.sin-mydots {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  ul {
+    display: flex;
+    li {
+      &:not(:last-of-type) {
+        margin: 0px 10px 0px 0px;
+      }
+      button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+      &.slick-active button {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  font-size: 0;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background: url(../../../i/white-arrow.svg) 0 0 / cover no-repeat;
+  }
+  &.slick-prev {
+    left: 0;
+    &::before {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+  &.slick-next {
+    right: 0;
+    &::before {
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+  }
+}

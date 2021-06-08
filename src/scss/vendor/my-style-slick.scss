@@ -9,15 +9,18 @@
 }
 /* Ограничивающая оболочка */
 .slick-list {
-   overflow: hidden;
+  overflow: hidden;
 }
 /* Лента слайдов */
 .slick-track {
-   display: flex;
+  display: flex;
 }
 /* Слайд */
 .slick-slide {
-   padding: 0px 4px 0px 0px;
+  padding: 0px 4px 0px 0px;
+}
+.sin-slider__slider-box .slick-slide {
+  padding: 0px 15px 0px 0px;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
@@ -27,7 +30,7 @@
 }
 
 .slider-nav .slick-slide:not(.slick-current) {
-   opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Слайд по центру */

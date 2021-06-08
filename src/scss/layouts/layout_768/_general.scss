@@ -1,0 +1,9 @@
+.sin-global-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 720px);
+  justify-content: center;
+  &__one {
+  }
+  &__two {
+  }
+}
