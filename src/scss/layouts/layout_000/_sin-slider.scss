@@ -51,7 +51,11 @@
   top: 0;
   font-size: 0;
   width: 60px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   &::before {
     content: "";
     display: block;
@@ -61,7 +65,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    background: url(../../../i/white-arrow.svg) 0 0 / cover no-repeat;
+    background: url(#{$i}white-arrow.svg) 0 0 / cover no-repeat;
   }
   &.slick-prev {
     left: 0;

@@ -104,11 +104,14 @@ function handleScrollTop(e) {
             clearInterval(interval);
         }
 
-        window.scrollBy(0, -15);
+        window.scrollBy(0, -65);
         upTop.addClass("none");
     }, 3);
 }
 $(document).on("mousewheel", handleOnScrollTop);
+if (window.pageYOffset < 400) {
+    upTop.addClass("none");
+}
 function handleOnScrollTop() {
     if (window.pageYOffset >= 400) {
         upTop.removeClass("none");
@@ -356,6 +359,9 @@ sinSlider.slick({
     waitForAnimate: false,
     centerMode: true,
     mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnDotsHover: true,
     responsive: [
         {
             breakpoint: 640,
