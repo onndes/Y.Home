@@ -1,51 +1,54 @@
 .faq {
-   &__wrapp {
-      max-width: 540px;
-      padding: 50px 0px 50px 0px;
-      margin: auto;
-   }
-   &__title {
-      @include font(700, 22px, $text-dark) {
-         text-align: center;
-         letter-spacing: 2px;
+  &__wrapp {
+    max-width: 540px;
+    padding: 50px 0px 50px 0px;
+    margin: auto;
+  }
+  &__title {
+    @include font(700, 22px, $text-dark) {
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    padding: 0px 0px 65px 0px;
+  }
+  &__questions-wrapp {
+  }
+  &__question-box {
+    padding: 15px 0px 15px 0px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $e-color;
+    }
+  }
+  &__question-title {
+    cursor: pointer;
+    @include font(600, 18px, $text-dark);
+    padding: 7px 20px 7px 0px;
+    @include psevdo(0, 10px, 1px) {
+      right: 0;
+      top: 7px;
+      background-color: $text-dark;
+    }
+    @include psevdo(1, 10px, 1px) {
+      right: 0;
+      top: 7px;
+      background-color: $text-dark;
+      transform: rotate(90deg);
+    }
+    &.open {
+      &::after {
+        display: none;
       }
-      padding: 0px 0px 65px 0px;
-   }
-   &__questions-wrapp {
-   }
-   &__question-box {
-      padding: 15px 0px 15px 0px;
-      &:not(:last-of-type) {
-         border-bottom: 1px solid $e-color;
-      }
-   }
-   &__question-title {
-      cursor: pointer;
-      @include font(600, 18px, $text-dark);
-      padding: 7px 20px 7px 0px;
-      @include psevdo(0, 10px, 1px) {
-         right: 0;
-         top: 7px;
-         background-color: $text-dark;
-      }
-      &.open {
-         @include psevdo(1, 10px, 1px) {
-            right: 0;
-            top: 7px;
-            background-color: $text-dark;
-            transform: rotate(90deg);
-         }
-      }
-   }
-   &__question-text {
-      display: none;
-      padding: 0px 15px 0px 0px;
-      @include font(500, 15px, $grey2) {
-         line-height: 24px;
-         text-align: justify;
-      }
-      &.open {
-         display: block;
-      }
-   }
+    }
+  }
+  &__question-text {
+    display: none;
+    padding: 0px 15px 0px 0px;
+    @include font(500, 15px, $grey2) {
+      line-height: 24px;
+      text-align: justify;
+    }
+    &.open {
+      display: block;
+    }
+  }
 }
