@@ -1,0 +1,16 @@
+.sin-container {
+  max-width: 1520px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.sin-global-grid {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  justify-content: center;
+  grid-gap: 50px;
+  &__one {
+  }
+  &__two {
+  }
+}
