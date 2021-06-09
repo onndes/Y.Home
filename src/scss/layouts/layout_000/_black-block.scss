@@ -1,5 +1,5 @@
 .black-block {
-  background: url(../../../i/hero.jpg) center center / cover no-repeat;
+  background: url(#{$i}hero.jpg) center center / cover no-repeat;
   &__wrapp {
     padding: 150px 0;
   }

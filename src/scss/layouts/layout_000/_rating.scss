@@ -1,109 +1,109 @@
 .rating {
-   &__wrapp {
-      padding: 50px 0;
-   }
-   &__title {
-      @include font(700, 22px, $text-dark);
-      padding: 0px 0px 15px 0px;
+  &__wrapp {
+    padding: 50px 0;
+  }
+  &__title {
+    @include font(700, 22px, $text-dark);
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+  }
+  &__text {
+    @include font(300, 17px, $p-color) {
+      line-height: 22px;
       text-align: center;
-   }
-   &__text {
-      @include font(300, 17px, $p-color) {
-         line-height: 22px;
-         text-align: center;
-      }
-      padding: 0px 0px 30px 0px;
-      @include psevdo(0, 40px, 1px) {
-         background: $text-dark;
-         bottom: 0;
-         left: 50%;
-         transform: translateX(-50%);
-      }
-      margin: 0px 0px 40px 0px;
-   }
-   &__stat-box {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
-      grid-gap: 60px;
-      justify-content: center;
-   }
-   &__stat-star {
-   }
-   &__star-number {
-      @include font(300, 42px, $grey2);
-      padding: 0px 0px 20px 0px;
-   }
-   &__star-list {
-      display: flex;
-      margin: 0px 0px 10px 0px;
+    }
+    padding: 0px 0px 30px 0px;
+    @include psevdo(0, 40px, 1px) {
+      background: $text-dark;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    margin: 0px 0px 40px 0px;
+  }
+  &__stat-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+    grid-gap: 60px;
+    justify-content: center;
+  }
+  &__stat-star {
+  }
+  &__star-number {
+    @include font(300, 42px, $grey2);
+    padding: 0px 0px 20px 0px;
+  }
+  &__star-list {
+    display: flex;
+    margin: 0px 0px 10px 0px;
 
-      max-width: 91px;
-      @include psevdo(0, 93%, 100%) {
-         top: 0;
-         left: 0;
-         background-color: $amaranth;
-      }
-   }
-   &__star-li {
-      height: 1rem;
-      width: 1.2rem;
-      margin: 0px -1px 0px 0px;
-      @include psevdo(0, 100%, 100%) {
-         // border-radius: 4px;
-         left: 0;
-         top: 0;
-         background: url(../../../i/ico/star-rating2.svg) 0 0 / cover no-repeat;
-      }
-   }
-   &__stat-text {
-      @include font(400, 16px, $grey2);
-   }
-   &__stat-link {
-      @include font(400, 14px, $amaranth);
-      text-decoration: underline;
-   }
-   &__stat-social {
-   }
-   &__social-number {
-      @include font(300, 65px, $grey2);
-   }
-   &__social-list {
-      display: flex;
-      margin: 10px 0px 0px 0px;
-   }
-   &__social-li {
-      margin: 0px 6px 0px 0px;
-   }
-   &__social-link {
-      display: block;
-      width: 1.5rem;
-      height: 1.5rem;
+    max-width: 91px;
+    @include psevdo(0, 93%, 100%) {
+      top: 0;
+      left: 0;
+      background-color: $amaranth;
+    }
+  }
+  &__star-li {
+    height: 1rem;
+    width: 1.2rem;
+    margin: 0px -1px 0px 0px;
+    @include psevdo(0, 100%, 100%) {
+      // border-radius: 4px;
+      left: 0;
+      top: 0;
+      background: url(#{$i}ico/star-rating2.svg) 0 0 / cover no-repeat;
+    }
+  }
+  &__stat-text {
+    @include font(400, 16px, $grey2);
+  }
+  &__stat-link {
+    @include font(400, 14px, $amaranth);
+    text-decoration: underline;
+  }
+  &__stat-social {
+  }
+  &__social-number {
+    @include font(300, 65px, $grey2);
+  }
+  &__social-list {
+    display: flex;
+    margin: 10px 0px 0px 0px;
+  }
+  &__social-li {
+    margin: 0px 6px 0px 0px;
+  }
+  &__social-link {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
 
-      @include psevdo(0, 100%, 100%) {
-         border-radius: 4px;
-         left: 0;
-         top: 0;
-         background: url(../../../i/svg-social/sprite.svg) 0 -1.5rem / cover no-repeat;
+    @include psevdo(0, 100%, 100%) {
+      border-radius: 4px;
+      left: 0;
+      top: 0;
+      background: url(#{$i}svg-social/sprite.svg) 0 -1.5rem / cover no-repeat;
+    }
+    &_1 {
+    }
+    &_2 {
+      &::before {
+        background-position: 0 -4.5rem;
       }
-      &_1 {
+    }
+    &_3 {
+      &::before {
+        background-position: 0 -7.5rem;
       }
-      &_2 {
-         &::before {
-            background-position: 0 -4.5rem;
-         }
-      }
-      &_3 {
-         &::before {
-            background-position: 0 -7.5rem;
-         }
-      }
-   }
-   &__stat-people {
-   }
-   &__people-number {
-      @include font(300, 65px, $grey2);
-      padding: 0px 0px 10px 0px;
-   }
+    }
+  }
+  &__stat-people {
+  }
+  &__people-number {
+    @include font(300, 65px, $grey2);
+    padding: 0px 0px 10px 0px;
+  }
 }
 .container {
 }
