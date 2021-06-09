@@ -1,0 +1,21 @@
+.sin-covid {
+  border: 1px solid $e-color;
+  border-radius: 10px;
+  margin: 0px 0px 50px 0px;
+  &__wrapp {
+    padding: 20px;
+  }
+  &__text {
+    @include font(400, 18px, $p-color);
+    line-height: 30px;
+    span {
+      padding: 0px 0px 0px 30px;
+      @include font(600, 20px, $amaranth);
+      @include psevdo(0, 25px, 25px) {
+        top: 0;
+        left: 0;
+        background: url(../../../i/ico/virus-protection.svg);
+      }
+    }
+  }
+}
