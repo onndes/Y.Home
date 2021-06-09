@@ -25,6 +25,7 @@
   }
   &__input-box {
     padding: 0px 0px 30px 0px;
+    position: relative;
   }
   &__label {
     display: block;
@@ -41,6 +42,7 @@
     border: 1px solid rgba(128, 128, 128, 0.541);
     border-radius: 4px;
     font-size: rem(15px);
+
     &_date {
       background-color: $white;
     }
@@ -51,9 +53,16 @@
       border: 1px solid rgba(231, 11, 11, 0.856);
     }
   }
-  &__span {
-    &_guests {
-      display: none;
+  &__span-guests {
+    display: none;
+    padding: 3px 0px 0px 0px;
+    font-size: rem(13px);
+    color: rgba(231, 11, 11, 0.856);
+
+    &._error {
+      display: block;
+      position: absolute;
+      right: 0;
     }
   }
   &__btn-box {

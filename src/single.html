@@ -116,7 +116,7 @@
   <!-- sin-slifer start -->
 
   <!-- global-grid start -->
-  <div class="sin-container">
+  <div class="container sin">
     <div class="sin-global-grid">
       <div class="sin-global-grid__one">
 
@@ -308,22 +308,22 @@
         <!-- sin-form start -->
         <div class="sin-form">
           <div class="sin-form__wrapp">
-            <form action="" class="sin-form__form" id="sin-form">
+            <form action="" class="sin-form__form" id="sin-form" novalidate>
               <p class="sin-form__title">Check Availability</p>
               <div class="sin-form__input-box-date">
                 <div class="sin-form__input-box">
                   <label for="sin-check-in" class="sin-form__label">CHECK-IN<span>*</span></label>
-                  <input type="date" class="sin-form__input" id="sin-check-in">
+                  <input type="date" class="sin-form__input _sin-req _sin-check-in" id="sin-check-in">
                 </div>
                 <div class="sin-form__input-box">
                   <label for="sin-check-out" class="sin-form__label">CHECK-OUT<span>*</span></label>
-                  <input type="date" class="sin-form__input" id="sin-check-out">
+                  <input type="date" class="sin-form__input _sin-req _sin-check-out" id="sin-check-out">
                 </div>
               </div>
               <div class="sin-form__input-box">
                 <label for="sin-nog" class="sin-form__label">NUMBER OF GUESTS*<span>*</span></label>
-                <input type="number" min="1" max="10" placeholder="Enter Guests Number" class="sin-form__input" id="sin-nog">
-                <span class="sin-form__span_guests">max guests 10</span>
+                <input type="number" min="1" max="10" placeholder="Enter Guests Number" class="sin-form__input _sin-req _sin-nog" id="sin-nog">
+                <span class="sin-form__span-guests">max guests 10</span>
               </div>
               <div class="sin-form__btn-box">
                 <button class="sin-form__btn" type="submit">RESERVE NOW</button>
