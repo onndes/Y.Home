@@ -465,7 +465,7 @@ function resetPhotoSelectx() {
     boxBg.removeClass("selectx");
     $("body").removeClass("hidden");
     boxImgOpen.css({ height: "", top: "" });
-    imgOpen.css({ width: ``, "max-width": ``, height: "", "max-heigth": "" });
+    imgOpen.css({ width: "", "max-width": "", height: "", "max-heigth": "" });
 }
 
 $(document).on("click", ".photo-block__li-item", function () {
