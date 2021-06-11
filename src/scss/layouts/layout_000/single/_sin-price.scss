@@ -1,6 +1,6 @@
 .sin-price {
   &_text {
-    @include font(800, 44px, $text-dark);
+    @include font(700, 44px, $text-dark);
     letter-spacing: -2px;
     padding: 0px 0px 45px 0px;
     span {

@@ -1,0 +1,86 @@
+.photo-block {
+  position: relative;
+  &__wrapp {
+    padding: 50px 0;
+  }
+  &__title {
+    text-align: center;
+    @include font(700, 45px, $text-dark);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0px 0px 40px 0px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__li-item {
+    cursor: pointer;
+    @include font(400, 23px, $grey2);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0px 0px 7px 0px;
+    margin: 0 15px;
+    &.selectedx {
+      @include font(400, 23px, $amaranth);
+      @include psevdo(0, 100%, 3px) {
+        bottom: 0;
+        left: 0;
+        background-color: $amaranth;
+      }
+    }
+    &:hover {
+      @include font(400, 23px, $amaranth);
+    }
+  }
+  &__photo-block {
+    padding: 30px 0px;
+  }
+  &__photo-grid {
+    margin: auto;
+  }
+  &__bg {
+    transition: all 0.3s ease 0s;
+  }
+  &__bg.selectx {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+  &__item {
+    width: 33.333%;
+    // transition: all 0.3s ease 0s;
+    img {
+      padding: 5px;
+      @include maxq("");
+    }
+  }
+
+  &__item-open {
+    display: none;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+    &.selectx {
+      display: block;
+      position: fixed;
+      z-index: 25;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__img-open {
+    object-fit: contain;
+    height: 100%;
+    max-height: 100%;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+  }
+}

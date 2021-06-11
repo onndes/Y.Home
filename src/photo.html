@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Y.Home</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="i/home-icons-2.svg" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Heder start -->
+  <header class="header">
+    <div class="header__wrapp">
+      <div class="header__logo-wrapp">
+        <a href="index.html" class="header__logo-link"><span>Y.</span>Home</a>
+      </div>
+      <div class="header__menu-wrapp">
+        <div id="menu-btn" class="header__icon-box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <menu class="header__menu">
+          <li class="header__menu-li"><a href="index.html" class="header__menu-link">Home</a></li>
+          <li class="header__menu-li"><a href="about-us.html" class="header__menu-link">About us</a></li>
+          <li class="header__menu-li header__menu-li_has-sub-li selected">
+            <a href="tour.html" class="header__menu-link">Tour</a>
+            <span class="menu__desktop-arrow desktop-arrow"></span>
+            <ul class="header__sub-list">
+              <li class="header__menu-li"><a href="single.html" class="header__menu-link">Single</a></li>
+              <li class="header__menu-li"><a href="photo.html" class="header__menu-link">Photo</a></li>
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Single</a></li>
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Single</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-li header__menu-li_has-sub-li">
+            <a href="contact-us.html" class="header__menu-link">Contact us</a>
+            <span class="menu__desktop-arrow desktop-arrow"></span>
+            <ul class="header__sub-list">
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Facebook</a></li>
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Instagram</a></li>
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Telegran</a></li>
+              <li class="header__menu-li"><a href="##" class="header__menu-link">test_Viber</a></li>
+            </ul>
+          </li>
+        </menu>
+        <div class="header__book-now">
+          <a class="header__book-now-link" href="##">Book now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Heder end -->
+
+  <!-- Mobile menu start-->
+  <div id="mobile-menu" class="header-mobile__menu-wrapp">
+    <div class="header-mobile__menu">
+      <li class="header-mobile__menu-li"><a href="index.html" class="header-mobile__menu-link this">Home</a></li>
+      <li class="header-mobile__menu-li"><a href="about-us.html" class="header-mobile__menu-link">About us</a></li>
+      <li class="header-mobile__menu-li has-submenu">
+        <a href="tour.html" class="header-mobile__menu-link is-submenu  selected">Tour</a>
+        <span class="menu__arrow arrow"></span>
+        <ul>
+          <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="single.html">Single</a></li>
+          <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="photo.html">Photo</a></li>
+          <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="##">test_Single</a></li>
+          <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="##">test_Single</a></li>
+        </ul>
+      </li>
+      <li class="header-mobile__menu-li has-submenu">
+        <a href="contact-us.html" class="header-mobile__menu-link is-submenu">Contact us</a>
+        <span class="menu__arrow arrow"></span>
+        <ul>
+          <li class="header-mobile__menu-li">
+            <a class="header-mobile__menu-link header-mobile__menu-link_sub" href="#footer">test_Facebook</a>
+          </li>
+          <li class="header-mobile__menu-li">
+            <a class="header-mobile__menu-link header-mobile__menu-link_sub" href="#footer">test_Instagram</a>
+          </li>
+          <li class="header-mobile__menu-li">
+            <a class="header-mobile__menu-link header-mobile__menu-link_sub" href="#footer">test_Telegran</a>
+          </li>
+          <li class="header-mobile__menu-li"><a class="header-mobile__menu-link header-mobile__menu-link_sub" href="#footer">test_Viber</a></li>
+        </ul>
+      </li>
+      <!-- 123 -->
+    </div>
+  </div>
+  <!-- Mobile menu end-->
+
+  <!-- photo-block start -->
+  <div class="photo-block">
+    <div class="photo-block__bg"></div>
+    <div class="container">
+      <div class="photo-block__wrapp">
+        <h2 class="photo-block__title">Photo</h2>
+        <ul class="photo-block__list">
+          <li class="photo-block__li-item" data-filter="photo-block__item">ALL</li>
+          <li class="photo-block__li-item" data-filter="chair">CHAIRS</li>
+          <li class="photo-block__li-item" data-filter="table">TABLES</li>
+        </ul>
+        <div class="photo-block__photo-block">
+          <div class="photo-block__photo-grid" id="gallery">
+            <!-- <div class="photo-block__sizer"></div> -->
+            <div class="photo-block__item"><img class="photo-block__img" data-img="1" src="i/rooms-photo/l/1.jpg" alt="" /></div>
+            <div class="photo-block__item chair"><img class="photo-block__img" data-img="2" src="i/rooms-photo/s/1.jpg" alt="" /></div>
+            <div class="photo-block__item table"><img class="photo-block__img" data-img="3" src="i/rooms-photo/l/2.jpg" alt="" /></div>
+
+            <div class="photo-block__item table"><img class="photo-block__img" data-img="4" src="i/rooms-photo/s/2.jpg" alt="" /></div>
+            <div class="photo-block__item"><img class="photo-block__img" data-img="5" src="i/rooms-photo/l/3.jpg" alt="" /></div>
+            <div class="photo-block__item"><img class="photo-block__img" data-img="6" src="i/rooms-photo/l/4.jpg" alt="" /></div>
+
+            <div class="photo-block__item"><img class="photo-block__img" data-img="7" src="i/rooms-photo/l/5.jpg" alt="" /></div>
+            <div class="photo-block__item"><img class="photo-block__img" data-img="8" src="i/rooms-photo/s/3.jpg" alt="" /></div>
+            <div class="photo-block__item chair"><img class="photo-block__img" data-img="9" src="i/rooms-photo/s/4.jpg" alt="" /></div>
+
+            <div class="photo-block__item chair"><img class="photo-block__img" data-img="10" src="i/rooms-photo/l/6.jpg" alt="" /></div>
+            <div class="photo-block__item table"><img class="photo-block__img" data-img="11" src="i/rooms-photo/s/5.jpg" alt="" /></div>
+            <div class="photo-block__item"><img class="photo-block__img" data-img="12" src="i/rooms-photo/s/6.jpg" alt="" /></div>
+
+
+
+          </div>
+          <div class="photo-block__item-open-box">
+            <div class="photo-block__item-open open-1"><img class="photo-block__img-open" src="i/rooms-photo/l/1.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-2"><img class="photo-block__img-open" src="i/rooms-photo/s/1.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-3"><img class="photo-block__img-open" src="i/rooms-photo/l/2.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-4"><img class="photo-block__img-open" src="i/rooms-photo/s/2.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-5"><img class="photo-block__img-open" src="i/rooms-photo/l/3.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-6"><img class="photo-block__img-open" src="i/rooms-photo/l/4.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-7"><img class="photo-block__img-open" src="i/rooms-photo/l/5.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-8"><img class="photo-block__img-open" src="i/rooms-photo/s/3.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-9"><img class="photo-block__img-open" src="i/rooms-photo/s/4.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-10"><img class="photo-block__img-open" src="i/rooms-photo/l/6.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-11"><img class="photo-block__img-open" src="i/rooms-photo/s/5.jpg" alt="" /></div>
+            <div class="photo-block__item-open open-12"><img class="photo-block__img-open" src="i/rooms-photo/s/6.jpg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- photo-block end -->
+
+  <!-- black-block start -->
+  <div class="black-block">
+    <div class="container">
+      <div class="black-block__wrapp">
+        <h3 class="black-block__title">More than 100,000<br>Travellers Visit Our Hostels.</h3>
+        <div class="black-block__btn-box">
+          <a class="black-block__btn-link" href="##">Book now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- black-block end -->
+
+  <!-- footer start -->
+  <footer id="footer" class="footer">
+    <div class="footer__wrapp">
+      <div class="footer__main-block">
+        <div class="footer__col">
+          <h4 class="footer__title-col">Features</h4>
+          <ul class="footer__list">
+            <li class="footer__li"><a href="##" class="footer__link">Help Center</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">Paid with Moblie</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title-col">Support</h4>
+          <ul class="footer__list">
+            <li class="footer__li"><a href="##" class="footer__link">Home</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">About</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title-col">Trending</h4>
+          <ul class="footer__list">
+            <li class="footer__li"><a href="##" class="footer__link">Shop</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">Events</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">Forums</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title-col">Get to Know us</h4>
+          <ul class="footer__list">
+            <li class="footer__li"><a href="##" class="footer__link">eCommerce</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">Personal</a></li>
+            <li class="footer__li"><a href="##" class="footer__link">OnePage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col_contact">
+          <p class="footer__text-addres">795 Folsom Ave, Suite 600<br />San Francisco, CA 94107</p>
+          <div class="footer__tel-box">
+            <a href="tel:+380770707888" class="footer__tel-link">+38(077)-07-07-888</a>
+          </div>
+          <div class="footer__social-icon-box">
+            <a href="##" class="footer__icon footer__icon_facebook"></a>
+            <a href="##" class="footer__icon footer__icon_instagram"></a>
+            <a href="##" class="footer__icon footer__icon_pinterest"></a>
+            <a href="##" class="footer__icon footer__icon_apay"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright-block">
+        <div class="footer__copyright-block-wrapp">
+          <div class="footer__wrapp-text">
+            <p class="footer__text-copyright">Copyrights © 2021 All Rights Reserved by Canvas Inc.</p>
+          </div>
+          <div class="footer__warpp-ul">
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-li"><a href="##" class="footer__bottom-link">About</a></li>
+              <li class="footer__bottom-li"><a href="##" class="footer__bottom-link">Cities</a></li>
+              <li class="footer__bottom-li"><a href="##" class="footer__bottom-link">FAQs</a></li>
+              <li class="footer__bottom-li"><a href="##" class="footer__bottom-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- button-scroll-top start-->
+  <div class="uptop">
+    <div class="uptop_svg"></div>
+  </div>
+  <!-- button-scroll-top end -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+    integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

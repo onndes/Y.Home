@@ -1,5 +1,5 @@
 ::selection {
-  background-color: $amaranth-o;
+  background-color: $amaranth-opacity;
   color: $white;
 }
 html {
@@ -8,6 +8,10 @@ html {
 body {
   font-size: 1rem;
   font-family: $fontFamily;
+  &.mouse.hidden {
+    overflow: hidden;
+    padding: 0px 17px 0px 0px;
+  }
 }
 .container {
   max-width: 1220px;

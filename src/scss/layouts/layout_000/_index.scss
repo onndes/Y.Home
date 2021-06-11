@@ -12,19 +12,21 @@
 @import "faq";
 @import "footer";
 
-@import "us-top-block";
-@import "us-video";
-@import "us-awards";
+@import "about-us/us-top-block";
+@import "about-us/us-video";
+@import "about-us/us-awards";
 
-@import "t-top-block";
+@import "tour/t-top-block";
 
-@import "cu-contact-us";
-@import "cu-form";
+@import "contact-us/cu-contact-us";
+@import "contact-us/cu-form";
 
-@import "sin-slider";
-@import "sin-penthouse";
-@import "sin-map-location";
-@import "sin-comments";
-@import "sin-price";
-@import "sin-form";
-@import "sin-covid";
+@import "single/sin-slider";
+@import "single/sin-penthouse";
+@import "single/sin-map-location";
+@import "single/sin-comments";
+@import "single/sin-price";
+@import "single/sin-form";
+@import "single/sin-covid";
+
+@import "photo/photo-block";

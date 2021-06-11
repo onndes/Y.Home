@@ -1,10 +1,10 @@
 .container.sin {
-  max-width: 1520px;  
+  max-width: 1520px;
 }
 
 .sin-global-grid {
   display: grid;
-  grid-template-columns: 1fr 540px;
+  grid-template-columns: 4fr 1fr;
   justify-content: center;
   grid-gap: 50px;
   &__one {
