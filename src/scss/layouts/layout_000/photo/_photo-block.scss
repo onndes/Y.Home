@@ -53,7 +53,7 @@
   }
   &__item {
     width: 33.333%;
-    // transition: all 0.3s ease 0s;
+    cursor: pointer;
     img {
       padding: 5px;
       @include maxq("");
