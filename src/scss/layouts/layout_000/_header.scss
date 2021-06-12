@@ -78,13 +78,13 @@
       background-color: $amaranth;
       padding: 22px 20px;
       @include maxq(310px) {
-         padding: 12px 7px;
+         padding: 14px 7px;
       }
       &:hover {
-         background-color: $grey;
+        background-color: $grey;
       }
-   }
-   &__book-now-link {
+    }
+    &__book-now-link {
       @include font(600, 14px, $white) {
          text-transform: uppercase;
          text-shadow: $black 1px 1px 1px;

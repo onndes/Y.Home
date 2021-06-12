@@ -4,7 +4,7 @@
     padding: 60px 0px 60px 0px;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
   &__title-no {
     @include font(700, 22px, $text-dark);
