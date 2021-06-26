@@ -1,4 +1,4 @@
-// !btn
+// +btn
 @mixin btn() {
       display: block;
       font-weight: 600;
@@ -7,9 +7,13 @@
       // text-shadow: $black 1px 1px 5px;
       padding: 17px 20px;
       background: $amaranth;
+      &:hover {
+        background: $text-dark;
+        color: $white
+      }
       @content;
 }
-// !Font mixin
+// +Font mixin
 @mixin font($fw: 400, $fz: 16px, $c: $text-dark) {
       font-weight: $fw;
       font-size: rem($fz);
@@ -17,7 +21,7 @@
       @content;
 }
 
-// !Psevdo element
+// +Psevdo element
 @mixin psevdo($ba, $w, $h) {
       & {
             position: relative;

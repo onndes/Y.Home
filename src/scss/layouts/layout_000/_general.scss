@@ -13,6 +13,11 @@ body {
     padding: 0px 17px 0px 0px;
   }
 }
+input {
+  &:focus {
+    box-shadow: 0px 0px 5px 3px $amaranth-opacity;
+  }
+}
 .container {
   max-width: 1220px;
   margin: auto;

@@ -105,7 +105,7 @@ function handleScrollTop(e) {
 
         window.scrollBy(0, -65);
         upTop.addClass("none");
-    }, 3);
+    }, 4);
 }
 $(document).on("mousewheel", handleOnScrollTop);
 if (window.pageYOffset < 400) {

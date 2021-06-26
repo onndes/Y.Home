@@ -103,6 +103,9 @@
     padding: 5px 8px;
     border: 1px solid rgba(128, 128, 128, 0.541);
     font-size: rem(15px);
+    &:focus {
+      box-shadow: 0px 0px 5px 3px $amaranth-opacity;
+    }
     &_date {
       background-color: $white;
     }
