@@ -64,7 +64,7 @@ module.exports = (env = { mode: "development" }) => {
             app: ["./src/js/app.js", "./src/scss/style.scss"],
         },
         output: {
-            path: __dirname + "/dist",
+            path: __dirname + "/public",
             filename: "js/[name].js",
         },
         devtool: isProduction ? "" : "source-map",
